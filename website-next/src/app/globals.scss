@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #ffffff;
+  --background-gray: #f8f8f8;
+  --foreground: #0b132a;
+  --accent-color: #f53838;
+  --text-light: #33363a;
+}
+
+.theme-dark {
+  --background: #0a0a0a;
+  --background-gray: #181818;
+  --foreground: #f7f7f7;
+  --accent-color: #ff6b6b;
+  --text-light: #eeeeee;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Inter", sans-serif;
+}
